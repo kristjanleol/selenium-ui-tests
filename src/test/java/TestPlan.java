@@ -45,7 +45,6 @@ public class TestPlan {
         maxLoanCalculator.pressSubmitButton();
         maxLoanCalculator.waitForpageToLoad();
         Assert.assertTrue(maxLoanCalculator.logInViewMessageIsPresent());
-
     }
 
     @Test(testName = "T_ID_07")

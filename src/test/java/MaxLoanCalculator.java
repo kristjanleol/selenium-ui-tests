@@ -36,12 +36,9 @@ public class MaxLoanCalculator extends PageObject {
 
     public void pressSubmitButton() {
         if (this.submit_button.getText().equals(SUBMIT_BUTTON)) {
-            //this.submit_button.click();
-
             JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
             javascriptExecutor.executeScript("arguments[0].click();", submit_button);
         }
-
     }
 
     public void scrollPage() {
@@ -74,7 +71,6 @@ public class MaxLoanCalculator extends PageObject {
     }
 
     public boolean logInViewMessageIsPresent() {
-
         return this.log_in_view_message.getText().equals(LOG_IN_VIEW_MESSAGE);
     }
 
